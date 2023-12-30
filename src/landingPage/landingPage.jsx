@@ -9,23 +9,33 @@ const landingPage = () => {
     return (
         <Fragment>
             <Navbar />
-            <AboutCard/>
-            <VM/>
+            <AboutCard />
+            <VM />
             <div className="page1">
                 <div className="con2">
                     <div className="k2">
                         <h1 className="boxKPH">
                             KPH HMIT 2023
                         </h1>
-                        
+
                     </div>
 
                 </div>
 
 
-            </div> 
-            <SC/>
-            <Footer/>
+            </div>
+            <SC />
+            <div id="struktur1">
+
+                <div className="row">
+                    <div className="col-1"></div>
+                    <div className="col-10">
+                        <img src="/struktur.svg" alt="" id="struktur" />
+                    </div>
+                    <div className="col-1"></div>
+                </div>
+            </div>
+            <Footer />
         </Fragment>
     )
 }

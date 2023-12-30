@@ -27,6 +27,7 @@ function Footer() {
                     email: '',
                     isi: '',
                 });
+                alert('Kritik dan Saran Berhasil Dikirim');
             }else{
                 console.error("teteyy");
             }
