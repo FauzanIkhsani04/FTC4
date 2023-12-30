@@ -23,16 +23,22 @@ function Navbar() {
                                 <span className="hover-line"></span>
                             </a>
                         </li>
+                    
                         <li className="nav-item m-4">
-                            <a className="nav-link text-white" href="#footer1" style={{ fontSize: '18px' }}>
-                                ABOUT
+                            <a className="nav-link text-white" href="#proker" style={{ fontSize: '18px' }}>
+                                PROGRAM KERJA
                                 <span className="hover-line"></span>
                             </a>
                         </li>
-                    
                         <li className="nav-item m-4">
                             <a className="nav-link text-white" href="#" style={{ fontSize: '18px' }}>
                                 STRUKTURAL
+                                <span className="hover-line"></span>
+                            </a>
+                        </li>
+                        <li className="nav-item m-4">
+                            <a className="nav-link text-white" href="#footer1" style={{ fontSize: '18px' }}>
+                                ABOUT
                                 <span className="hover-line"></span>
                             </a>
                         </li>

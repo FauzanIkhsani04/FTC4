@@ -1,78 +1,60 @@
-import Fb from '../../public/Facebook.png';
-import Ig from '../../public/instagram.png';
-import Tw from '../../public/Twitter.png';
-import Lk from '../../public/Linkedin.png';
 
-// function Footer() {
-//     return (
-//         <footer>
-//             <div id="footer1">
-
-//             <div className="footer footer-expand-lg footer-dark bg-dark">
-//                 <div className="row">
-//                     <div className="col-12 col-md-6">
-//                         <a href="/" className="logo">
-//                             <img src="HMIT.png" alt="HMIT" height="80" style={{ color: 'white' }} />
-//                         </a>
-//                         <div className="copyright" style={{ color: 'white' }}>© 2017-2025 HMIT Inc.</div>
-//                     </div>
-
-//                     <div className="social text-center" style={{ display: 'flex', justifyContent: 'flex-end' }}>
-//                         <img src={Fb} alt="Facebook" width="35" height="35" />
-//                         <img src={Ig} alt="Instagram" width="35" height="35" />
-//                         <img src={Tw} alt="Twitter" width="35" height="35" />
-//                         <img src={Lk} alt="Linkedin" width="35" height="35" />
-//                     </div>
-
-
-//                     <div className="col-12 col-md-6">
-//                         <div className="contact">
-//                             <a style={{ color: 'white' }}>Contact</a>
-//                             <ul>
-//                                 <li><a href="tel:+62122-133-144-0" style={{ color: 'white' }}>Telp: +62 122-133-144-0</a></li>
-//                                 <li><a href="mailto:HMITTEL-U@gmail.com" style={{ color: 'white' }}>Email: HMITTEL-U@gmail.com</a></li>
-//                             </ul>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//             </div>
-//         </footer>
-//     );
-// }
-
-// export default Footer;
-
-import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-
-const Footer = () => {
+function Footer() {
     return (
-        <div id="footer1">
-            <footer className="bg-dark text-white p-4">
-                <div className="container">
+        <footer>
+            <div id="footer1">
+                <div className="container-fluid foot">
                     <div className="row">
-                        <div className="col-12 col-md-6">
-                            <img src="HMIT.png" alt="Organization Logo" height="50" />
+                        <div className="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                            <img src="HMIT.png" alt="" style={{ width: '180px', height: '180px' }} />
                         </div>
-                        <div className="col-12 col-md-6 text-end">
-                            <a href="#" className="text-white me-3"><FaTiktok /></a>
-                            <a href="#" className="text-white me-3"><FaInstagram /></a>
-                            <a href="#" className="text-white me-3"><FaTwitter /></a>
-                            <a href="#" className="text-white"><FaLinkedin /></a>
-                        </div>
-                    </div>
+                        <div className="col-12 col-md-4 mt-5" >
 
-                    {/* Copyright text at the bottom */}
-                    <div className="row mt-4">
-                        <div className="col-12 text-center">
-                            <p className="m-0">© 2023 Your Organization. All rights reserved.</p>
+                            <h1>HMIT PRESENT</h1>
+                            <div>
+                                <h4><a href="https://linktr.ee/hmit_telu" style={linkStyle}>LINKTREE</a></h4>
+                                <h4><a href="https://www.instagram.com/hmit_telu/" style={linkStyle}>INSTAGRAM</a></h4>
+                                <h4><a href="https://www.tiktok.com/@hmit.telkomuniversity" style={linkStyle}>TIKTOK</a></h4>
+                                <h4><a href="https://line.me/R/ti/p/@jvz4981s?from=page&liff.referrer=https%3A%2F%2Flinktr.ee%2F&accountId=jvz4981s" style={linkStyle}>LINE</a></h4>
+                            </div>
+
+                        </div>
+                        <div className="col-12 col-md-6 mt-5">
+                            <h2>KRITIK DAN SARAN</h2>
+                            <form>
+                                <div className="row">
+                                    <div className="col-10">
+                                        <div className="form-group">
+                                            <label htmlFor="nama">Nama:</label>
+                                            <input type="text" name="nama" className="form-control" required />
+                                            <label htmlFor="nama">email:</label>
+                                            <input type="text" name="email" className="form-control" required />
+                                            <label htmlFor="nama">kritik & Saran:</label>
+                                            <input type="text" name="saran" className="form-control" required />
+                                        </div>
+                                    </div>
+                                    <div className="col-2">
+                                        <button type="submit" className="btn btn-success my-3" style={{ height: '130px' }}>Kirim</button>
+                                    </div>
+
+                                </div>
+
+                            </form>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+
+            </div>
+        </footer>
     );
+}
+
+const linkStyle = {
+    color: 'green',
+    textDecoration: 'none',  // Menghapus garis bawah
 };
 
+
 export default Footer;
+
+
